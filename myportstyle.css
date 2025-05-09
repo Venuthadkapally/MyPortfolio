@@ -14,7 +14,7 @@ html{
 } 
 
 body{
-    background:linear-gradient(150deg, #38a559, #7948a0,#7fd99a, #ae82d1);
+    background:linear-gradient(150deg, #38a559, #7948a0);
     height:100%;
     color:white;
 
@@ -70,8 +70,7 @@ body{
 .content{
     padding-top:70px;
     color:white;
-    height:500px;
-    width:1265px;
+    width:100%;
     display:flex;
     border-radius: 15px;
 
@@ -84,7 +83,7 @@ body{
     margin-top:20px;
     padding-top:20px;
     margin-left:20px;
-    width:300px;
+    width:2rem;
     font-size:40px;
     color:black;
     font-weight:bold;
@@ -97,8 +96,7 @@ body{
 .container{
     padding-top:30px;
     padding-left:30px;
-    width:800px;
-    height:300px;
+    width:100%;
     font-weight:lighter;
     font-size:40px;
     color:rgb(43, 49, 49);
@@ -120,12 +118,21 @@ span{
 /* //////////////////////skills  boxes//////////////////////////////////////////////// //////////////////////*/
 .tc{
     color:white;
-    margin-left:200px;
+    display:flex;
+    flex-wrap:wrap;
     text-align:center;
+    align-items:center;
+    justify-content: center;
 }
 .tc b{
     color:white;
     font-size:35px;
+}
+#skillsheading{
+    height:100%; 
+    max-height:1000px;
+    max-width:1280px;
+    width:100%; 
 }
 .skillsheading h1{
         color:rgb(13, 10, 10);
@@ -141,12 +148,15 @@ span{
     text-align:center;
     justify-content:center;
     margin-top:30px;
-    height:150px;
-    width:800px;
+    height:100%;
+    max-height:500px;
+    width:100%;
+    max-width:900px;
     background-color:#27342a;
     border:2px solid rgb(19, 18, 18);
     border-radius:15px;
 }
+
 .box:hover{
     transform:scale(1.04);
     transition-duration: 1s;
@@ -173,8 +183,10 @@ span{
     padding-left:10px;
 }
 .projectbox{
-    height:385px;
-    width:550px;
+    height:420px;
+    max-height:800px;
+    width:600px;
+    max-width:800px;
     background-color:rgb(24, 20, 20);
     border:1px solid rgb(239, 232, 232);
 }
@@ -208,7 +220,7 @@ span{
     color:red;
 }
 .projectbox:hover{
-    transform:scale(1.07);
+    transform:scale(1.03);
     transition-duration: 1s;
 }
 
@@ -272,7 +284,8 @@ span{
 }
 .boxes {
     height: 500px;
-    width: 700px;
+    max-width: 700px;
+    width:700px;
     background-size: cover;
     background-position: center;
     flex-shrink: 0;
@@ -294,7 +307,6 @@ span{
 
 /* //////////////////Education           ///////////////////////////////////////////////////////////////////// */
 .education-mainbox{
-    height:320px;
     width:100%;
     border:2px solid black;
     margin-top:50px;
@@ -324,8 +336,10 @@ span{
     justify-content:space-around;
 }
 .edubox{
-    height:125px;
-    width:380px;
+    height:100%;
+    max-height:125px;
+    width:100%;
+    max-width:400px;
     border:5px solid rgb(114, 110, 110);
     border-radius:10px;
 }
@@ -366,18 +380,19 @@ button{
     display:flex;
     color:white; 
     margin-top:80px;
-    margin-left:300px;
     gap:100px;
     padding-left:100px;
 }
 .res-box{
     display:none;
-    height:800px;
-    width:600px;
+    height:100%;
+    max-height:800px;
+    max-width:600px;
+    width:100%;
     justify-content:center;
     align-items:center;
     text-align:center;
-    margin-left:300px;
+    margin-left:100px;
 }
 .tap{
     color:rgb(219, 28, 28);
@@ -390,8 +405,9 @@ button{
 footer{
     text-align:center;
     margin-top:30px;
-    height:150px;
     width:100%;
+    max-height:200px;
+    max-width:1300px;
     background-color:#020929;
 }
 .contact p{
