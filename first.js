@@ -7,6 +7,7 @@ const showResume=document.querySelector(".tap");
 const resume=document.querySelector(".res-box");
 let count=1;
 /*////////////////////////////certifications.....................////////////////////////////*/
+alert("Use desktopSite for better Interface");
 const nextslide=()=>{
   images.style.transform=`translateX(-${count*700}px)`;
   count++;
